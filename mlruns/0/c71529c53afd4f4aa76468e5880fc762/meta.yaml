@@ -1,0 +1,15 @@
+artifact_uri: ./mlruns/0/c71529c53afd4f4aa76468e5880fc762/artifacts
+end_time: 1651859039422
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: c71529c53afd4f4aa76468e5880fc762
+run_uuid: c71529c53afd4f4aa76468e5880fc762
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1651859034958
+status: 3
+tags: []
+user_id: Husar
