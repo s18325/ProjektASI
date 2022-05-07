@@ -30,14 +30,14 @@ if __name__ == "__main__":
     np.random.seed(40)
 
     # Read the training csv file from the URL for mlflow
-    # csv_url = (
-    #     "DataSet\\training_DS.csv"
-    # )
+    csv_url = (
+        "DataSet\\training_DS.csv"
+    )
     
     #Read the initial CSV from the URL for pycharet
-    csv_url = (
-        "DataSet\\diabetes_012_health_indicators_BRFSS2015.csv"
-    )
+    #csv_url = (
+    #    "DataSet\\diabetes_012_health_indicators_BRFSS2015.csv"
+    #)
     ###################################################
     
     try:
