@@ -29,5 +29,4 @@ if __name__ == "__main__":
     ds['PhysHlth'][ds['PhysHlth'] < 20] += np.random.randint(10)
     ds['Age'][ds['Age'] > 4] -= np.random.randint(4)
     
-    drif_Data = 'drif_DS.csv'
-    ds.to_csv('DataSet/drif_DS.csv', index=False)
+    ds.to_csv('DataSet/drif4_DS.csv', index=False)
