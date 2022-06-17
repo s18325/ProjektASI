@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import pickle
-from sklearn.metrics import accuracy_score, classification_report
+from sklearn.metrics import accuracy_score
 from datetime import date, datetime
 import os.path
 import logging
@@ -14,20 +14,21 @@ logger = logging.getLogger(__name__)
 pickled_model = pickle.load(open("model/myModel.pkl", 'rb'))
 
 # Read test data
-batch_no = 1
-csv_url = ("DataSet\\validation_DS.csv")
+batch_no = 6
+# csv_url = ("DataSet\\validation_DS.csv")
+csv_url = ("Dataset\\drif"+str(batch_no)+"_DS.csv")
 try:
     test_data = pd.read_csv(csv_url, sep=",")
 except Exception as e:
     logger.exception(
         "Unable to download training & test CSV, check your internet connection. Error: %s", e
     )
-
+# print(test_data)
 # X = test_data[1:].values.reshape(-1,1)
 # y = test_data['Diabetes_012'].values.reshape(-1,1)
 X = test_data.iloc[:,1:].values
 y = test_data['Diabetes_012'].values
-print(y)
+# print(str(y))
 
 # Predict
 predictions = pickled_model.predict(X)
